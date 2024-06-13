@@ -1,0 +1,6 @@
+.env
+*.log
+__pycache__
+venv/
+
+secret_for_credentials.json

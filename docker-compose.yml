@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app-backend:
+    container_name: backend
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file: ./backend/.env
+    volumes:
+      - ./backend:/app
+    ports:
+      - 8000:8000
+    entrypoint: ["/app/scripts/start-backend.sh"]
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "20"
+  
