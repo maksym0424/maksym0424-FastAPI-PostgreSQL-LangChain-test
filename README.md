@@ -1,4 +1,4 @@
-# FastAPI + Postgres + SQLAlchemy + Alembic + LangChain + OpenAI + Tavily project.
+# FastAPI + Postgres + SQLAlchemy + Alembic + LangChain + OpenAI + Tavily.
 
 *Postgres database is hosted on GCP, and connecting to it using Cloud SQL.*
 
